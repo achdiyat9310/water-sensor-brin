@@ -1,0 +1,704 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+
+/*NAVBAR*/
+
+.navbar {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.item-list {
+    color: black;
+    margin-right: 20px;
+    /* Memberikan jarak antar item navbar */
+}
+
+.item-list:hover {
+    color: #e62f2a;
+    transition: 0.5s ease;
+}
+
+.navbar-box {
+    background-color: #fff;
+    box-shadow: 0 6px 8px rgba(1, 1, 1, 0.1);
+}
+
+.unduh-aplikasi-button {
+    background-color: #e62f2a;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 20px;
+    font-size: 18px;
+    font-weight: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 40px;
+}
+
+.unduh-aplikasi-button:hover {
+    background-color: #e62f2a;
+    color: #fff;
+    text-decoration: none;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* Menambahkan jarak antar tombol di kanan navbar */
+}
+
+
+/*HERO*/
+
+.hero-container {
+    margin: 40px auto;
+    display: flex;
+    height: 470px;
+    background: #ffff;
+    padding: 0 10%;
+    margin-bottom: 50px;
+}
+
+.hero-container>div {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.hero-container p {
+    font-size: 16px;
+    color: #5A5A5A;
+}
+
+.hero-container h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 15px 0;
+    color: black;
+}
+
+.hero-container h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 15px 0;
+    color: #e62f2a;
+}
+
+.hero-container p {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 15px 0;
+    color: black;
+}
+
+.hero-container>img {
+    width: 55%;
+    height: 400px;
+    align-self: center;
+}
+
+a.tbl-mulai {
+    background: #E62F2A;
+    border-radius: 30px;
+    padding: 15px 30px 15px 30px;
+    color: #ffff;
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+a.tbl-mulai:hover {
+    background: #252525;
+    transition: 0.3s ease;
+}
+
+
+/*Login*/
+
+.login {
+    /* position: absolute; */
+    /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+    margin: auto;
+    margin-top: 30px;
+    background: #ffff;
+    padding: 0 50px 0px 60px;
+    width: 550px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login>h1 {
+    margin-top: 50px;
+    padding: 25px 63px 25px 49px;
+    color: #E62F2A;
+    font-weight: 800;
+    letter-spacing: 3px;
+    font-size: 28px;
+}
+
+.login p {
+    text-align: center;
+    padding: 10px 0 10px 0;
+    color: #5A5A5A;
+    text-decoration: underline;
+}
+
+.login img {
+    width: 400px;
+    height: 90%;
+    padding: 0 10px 0 34px;
+}
+
+.login form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.form-input {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-input input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-input label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.form-input ::before {
+    content: " ";
+    position: absolute;
+    top: 40px;
+}
+
+.login-button {
+    width: 100%;
+    /* Tombol memenuhi lebar form */
+    max-width: 220px;
+    /* Lebar maksimum tombol */
+    padding: 20px;
+    /* Ukuran padding lebih besar untuk tombol besar */
+    background-color: #E53935;
+    /* Warna merah */
+    color: #fff;
+    /* Warna teks putih */
+    border: none;
+    /* Menghilangkan border */
+    border-radius: 30px !important;
+    /* Membuat tombol lebih melingkar */
+    font-size: 18px;
+    /* Ukuran font lebih besar */
+    font-weight: bold;
+    /* Membuat teks tombol tebal */
+    cursor: pointer;
+    /* Menambahkan efek pointer saat hover */
+    margin: auto;
+    margin-top: 50px;
+    /* Memberikan jarak di atas/bawah tombol dan memusatkan tombol */
+    display: block;
+    /* Memastikan tombol berada di tengah */
+    text-transform: uppercase;
+    /* Huruf besar untuk teks tombol */
+}
+
+.login-button:hover {
+    background-color: #D32F2F;
+}
+
+.guest-login {
+    margin-top: 0;
+    font-size: 12px;
+    color: #999;
+    cursor: pointer;
+}
+
+
+/* Dashboard.css */
+
+
+/* Container styling */
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+/* Header styling */
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.dashboard-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-input {
+    padding: 5px 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.button-start,
+.button-live {
+    padding: 5px 15px;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-start {
+    background-color: #27ae60;
+}
+
+.button-live {
+    background-color: #e74c3c;
+}
+
+
+/* Map box styling */
+
+.maps-box {
+    flex: 1;
+    position: relative;
+}
+
+.details {
+    height: 100%;
+    width: 100%;
+}
+
+
+/*Analisis*/
+
+.analisis-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.analisis-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.chart-section {
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.chart-title {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+
+/*FEEDS*/
+
+.feeds-box {
+    background-color: #ffff;
+    margin: 0 10%;
+    margin-top: 30px;
+    padding: 0 20px;
+    border-top: 1px solid rgb(224, 224, 224);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    width: 81%;
+    height: 150px;
+    padding: 40px;
+    margin-bottom: 30px;
+}
+
+.feeds-box h1 {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.feeds-box:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+}
+
+.feeds-details {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #252525;
+}
+
+
+/*Unduh*/
+
+.unduh-box {
+    background-color: #ffff;
+    margin: 0 10%;
+    margin-top: 30px;
+    padding: 0 20px;
+    border-top: 1px solid rgb(224, 224, 224);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    width: 81%;
+    height: 550px;
+    padding: 60px 60px;
+    font-weight: bolder;
+}
+
+button[type="submit"] {
+    background: #e62f2a;
+    border: #252525;
+    border-radius: 15px;
+    padding: 15px 30px 15px 30px;
+    color: #ffff;
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #cf2d27;
+    transition: 0.5s ease;
+}
+
+button[type="reset"] {
+    background: #ffff;
+    border: 1px solid #252525;
+    border-radius: 15px;
+    padding: 15px 30px 15px 30px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+    width: 100%;
+}
+
+input[type="date"] {
+    width: 960px;
+    height: 70px;
+}
+
+
+/*About*/
+
+.About {
+    padding: 0 10%;
+    margin: 0 auto;
+}
+
+.About>div {
+    color: #252525;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 30px;
+}
+
+hr {
+    border: none;
+    height: 5px;
+    background-color: #e62f2a;
+}
+
+.heading {
+    margin-top: 50px;
+    /* Jarak di atas h1 */
+    margin-bottom: 10px;
+    /* Jarak di bawah h1 */
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: #e62f2a;
+    margin-bottom: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    /* Lebar gambar */
+    border-radius: 5px;
+}
+
+.content {
+    line-height: 1.6;
+    margin-top: 30px;
+}
+
+.misi-section {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.misi-text {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -70px;
+    flex-wrap: wrap;
+    /* Menyesuaikan jika layar kecil */
+}
+
+.misi {
+    text-align: center;
+    width: 30%;
+    /* Mengurangi lebar elemen agar lebih rapat */
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 51%;
+    background-color: #fff;
+    padding: 20px;
+    margin: 80px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.icon img {
+    width: 50px;
+    /* Ukuran gambar di tengah lingkaran */
+    height: 50px;
+    fill: #e62f2a;
+}
+
+
+/*Download data*/
+
+
+/*Footer*/
+
+
+/*Footer*/
+
+.footer-box {
+    margin-top: 100px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e2e2e2;
+}
+
+footer p {
+    color: black;
+    text-align: center;
+    margin: 0;
+}
+
+
+/* Navbar Responsif */
+
+@media (max-width: 768px) {
+    .navbar {
+        font-size: 16px;
+    }
+    /* Memastikan navbar item tetap sejajar secara horizontal */
+    .navbar .ms-auto {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        /* Menjaga item berada dalam satu baris */
+        gap: 10px;
+        /* Memberikan jarak antar item */
+        justify-content: center;
+        /* Menjaga posisi item di tengah */
+    }
+    /* Mengatur tombol unduh aplikasi agar sesuai dengan lebar layar */
+    .unduh-aplikasi-button {
+        margin-left: 0;
+        margin-top: 10px;
+        width: auto;
+        /* Agar tombol tetap proporsional */
+        padding: 5px 20px;
+        /* Menyesuaikan ukuran tombol */
+    }
+}
+
+
+/* Hero Responsif */
+
+@media (max-width: 768px) {
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding: 0 20px;
+        text-align: center;
+    }
+    .hero-container>div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .hero-container img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+        object-fit: contain;
+        margin-top: 20px;
+    }
+    .hero-container h1 {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+    .hero-container h3 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    .hero-container p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+}
+
+
+/* Misi Section Responsif */
+
+@media (max-width: 768px) {
+    .misi-text {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* Memastikan konten berada di tengah */
+        text-align: center;
+        /* Menjaga teks tetap di tengah */
+    }
+    .misi {
+        width: 80%;
+        margin: 20px 0;
+    }
+    .icon {
+        display: flex;
+        justify-content: center;
+        /* Memastikan ikon berada di tengah secara horizontal */
+        align-items: center;
+        /* Memastikan ikon berada di tengah secara vertikal */
+        width: 100px;
+        height: 100px;
+        margin: 30px auto;
+        /* Menambahkan margin auto untuk center */
+        border-radius: 50%;
+        /* Membuat ikon berbentuk lingkaran */
+    }
+    .icon img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+/* Login Form Responsif */
+
+@media (max-width: 768px) {
+    .login {
+        width: 90%;
+        /* Mengubah lebar menjadi 90% dari layar */
+        padding: 0 30px;
+        /* Mengurangi padding */
+    }
+    .login h1 {
+        font-size: 24px;
+        /* Mengubah ukuran font judul */
+    }
+    .form-input input {
+        font-size: 14px;
+        /* Mengubah ukuran font input */
+    }
+    input[type="submit"] {
+        width: 100%;
+        /* Membuat tombol submit 100% lebar */
+        font-size: 16px;
+        /* Menyesuaikan ukuran font tombol */
+    }
+}
+
+
+/* General Responsiveness */
+
+@media (max-width: 480px) {
+    .hero-container h1 {
+        font-size: 28px;
+        /* Menyesuaikan ukuran font untuk layar lebih kecil */
+    }
+    .hero-container h3 {
+        font-size: 24px;
+    }
+    .hero-container p {
+        font-size: 14px;
+    }
+    .item-list {
+        font-size: 14px;
+        /* Menyesuaikan font item navbar */
+    }
+    .misi {
+        width: 100%;
+        /* Membuat misi menjadi penuh lebar pada layar kecil */
+    }
+    .icon {
+        width: 80px;
+        /* Ukuran lebih kecil untuk ikon */
+        height: 80px;
+    }
+    .icon img {
+        width: 30px;
+        height: 30px;
+    }
+}
